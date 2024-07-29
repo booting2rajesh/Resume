@@ -1,0 +1,271 @@
+a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+a:hover:not(.active) {
+  background-color: rgba(10, 107, 204, 0.53);
+}
+
+img {
+  padding-top: 70px;
+}
+
+.name {
+  padding-left: 35px;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(89, 159, 224);
+  font-stretch: ultra-expanded;
+}
+
+.designation {
+  font-size: 15px;
+  color: rgb(89, 159, 224);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 7px;
+  font-stretch: ultra-expanded;
+}
+
+.resume {
+  text-align: left;
+  padding-top: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+ul {
+  display: block;
+  list-style-type: none;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-around;
+}
+
+.QR {
+  margin-left: 1000px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%; /* or any desired width */
+}
+.image img {
+  max-width: 48%; /* Ensures images are responsive and fit within the container */
+  height: auto;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.form {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  overflow: visible;
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+.container .content {
+  display: flex;
+  overflow: visible;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side {
+  width: 25%;
+  overflow: visible;
+  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before {
+  content: "";
+  overflow: visible;
+  white-space: nowrap;
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details {
+  margin: 14px;
+  overflow: visible;
+  text-align: center;
+  white-space: nowrap;
+}
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  overflow: visible;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.content .left-side .details .topic {
+  font-size: 18px;
+  overflow: visible;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  overflow: visible;
+  white-space: nowrap;
+  color: #afafb6;
+}
+.container .content .right-side {
+  width: 75%;
+  white-space: nowrap;
+  margin-left: 75px;
+  overflow: visible;
+}
+.content .right-side .topic-text {
+  font-size: 23px;
+  overflow: visible;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box {
+  height: 50px;
+  overflow: visible;
+  white-space: nowrap;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+  white-space: nowrap;
+}
+.right-side .message-box {
+  min-height: 110px;
+  overflow: visible;
+  overflow: visible;
+  white-space: nowrap;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+  overflow: visible;
+  white-space: nowrap;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+  overflow: visible;
+  white-space: nowrap;
+}
+.right-side .button input[type="button"] {
+  color: #fff;
+  overflow: visible;
+  white-space: nowrap;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+  background: #5029bc;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 100%;
+    overflow: visible;
+    white-space: nowrap;
+    padding: 30px 40px 40px 35px;
+  }
+  .container .content .right-side {
+    width: 100%;
+    overflow: visible;
+    white-space: nowrap;
+    margin-left: 55px;
+  }
+}
+@media (max-width: 820px) {
+  .container {
+    margin: 40px 0;
+    overflow: visible;
+    height: 100%;
+    white-space: nowrap;
+  }
+  .container .content {
+    flex-direction: column-reverse;
+    white-space: nowrap;
+    overflow: visible;
+  }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: visible;
+  }
+  .container .content .left-side::before {
+    display: none;
+    overflow: visible;
+    white-space: nowrap;
+  }
+  .container .content .right-side {
+    white-space: nowrap;
+    width: 100%;
+    overflow: visible;
+    margin-left: 0;
+  }
+}
